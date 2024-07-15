@@ -1,0 +1,25 @@
+
+key: val
+key1: value
+myname: Shabnam
+son: Owaiz
+Mom: Shameem
+Father: Basheer
+Brother: Shameer
+
+#assiging paths to all files here, later if you want to change
+#any folder location, you can change here, it will automaticallu
+#reflect in the code where these files are called.
+#Data Ingestion
+# artifacts_root: artifacts
+
+# data_ingestion:
+#   root_dir: artifacts/data_ingestion
+#   source_URL: https://github.com/Shabucode/disease_classification_ck/blob/a0d4fb033838c7e34a6bda702b966c866c5c4a11/Chicken-fecal-images.zip
+#   local_data_file: artifacts/data_ingestion/data.zip
+#   unzip_dir: artifacts/data_ingestion
+
+#assiging paths to all files here, later if you want to change
+#any folder location, you can change here, it will automaticallu
+#reflect in the code where these files are called.
+#Data Ingestion

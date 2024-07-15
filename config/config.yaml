@@ -1,0 +1,12 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_URL: https://github.com/Shabucode/Datasets/raw/main/Chicken-fecal-images.zip
+  local_data_file: artifacts/data_ingestion/data.zip
+  unzip_dir: artifacts/data_ingestion
+
+#assiging paths to all files here, later if you want to change
+#any folder location, you can change here, it will automaticallu
+#reflect in the code where these files are called.
+#Data Ingestion

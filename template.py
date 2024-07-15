@@ -15,13 +15,16 @@ list_of_files = [
     f"src/{project_name}/pipeline/__init__.py",
     f"src/{project_name}/entity/__init__.py",
     f"src/{project_name}/constants/__init__.py",
+    f"src/{project_name}/components/__init__.py",
     "config/config.yaml",
     "dvc.yaml",
     "params.yaml",
     "requirements.txt",
     "setup.py",
     "research/trials.ipynb",
-    "test.py"
+    "test.py",
+    "templates/index.html"
+
 ]
 
 #to handle path issues
@@ -36,7 +39,7 @@ for filepath in list_of_files:
     if (not os.path.exists(filepath)) or (os.path.getsize(filepath)== 0):
         with open(filepath, "w") as f:
             pass
-        logging.info(f"Creating empty file: {filepath}")
+            logging.info(f"Creating empty file: {filepath}")
 
     else:
         logging.info(f"File: {filepath} already exists")

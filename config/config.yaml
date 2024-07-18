@@ -10,3 +10,10 @@ data_ingestion:
 #any folder location, you can change here, it will automaticallu
 #reflect in the code where these files are called.
 #Data Ingestion
+
+#update the config.yaml
+
+prepare_base_model:
+  root_dir: artifacts/prepare_base_model
+  base_model_path: artifacts/prepare_base_model/base_model.h5
+  updated_base_model_path: artifacts/prepare_base_model/base_model_updated.h5  #add custom layer on top and save as an updated model

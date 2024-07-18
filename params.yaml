@@ -1,25 +1,10 @@
+#intialize the parameters for the model 
 
-key: val
-key1: value
-myname: Shabnam
-son: Owaiz
-Mom: Shameem
-Father: Basheer
-Brother: Shameer
-
-#assiging paths to all files here, later if you want to change
-#any folder location, you can change here, it will automaticallu
-#reflect in the code where these files are called.
-#Data Ingestion
-# artifacts_root: artifacts
-
-# data_ingestion:
-#   root_dir: artifacts/data_ingestion
-#   source_URL: https://github.com/Shabucode/disease_classification_ck/blob/a0d4fb033838c7e34a6bda702b966c866c5c4a11/Chicken-fecal-images.zip
-#   local_data_file: artifacts/data_ingestion/data.zip
-#   unzip_dir: artifacts/data_ingestion
-
-#assiging paths to all files here, later if you want to change
-#any folder location, you can change here, it will automaticallu
-#reflect in the code where these files are called.
-#Data Ingestion
+AUGMENTATION: True
+IMAGE_SIZE: [224, 224, 3] #as per VGG16 model from keras application
+BATCH_SIZE: 16 #more compute --> more batches
+INCLUDE_TOP: False #need pretrained model, instead of training from scratch
+EPOCH: 1 #can increase the number of epochs
+CLASSES: 2 #disease or non-disease
+WEIGHTS: imagenet #image classification is already trained on imagenet
+LEARNING_RATE: 0.01
